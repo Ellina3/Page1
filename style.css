@@ -37,7 +37,6 @@
 }
 
 .logo {
-    width: 17%;
     height: 100px;
     float:left;
 }
@@ -109,17 +108,15 @@ ul.menu> li> a{
   background-color: rgb(232, 69, 69);
   width: 200px;
   height: 46px;
-}
-
-.masterheader button a{
   text-decoration: none;
+  cursor: pointer;
   font-family: RalewaySemiBold;
   font-size: 13px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  line-height: 46px; 
+  line-height: 46px;
 }
 
 .features{
@@ -363,10 +360,8 @@ ul.menu> li> a{
   background-color: rgb(232, 69, 69);
   width: 280px;
   height: 46px;
-}
-
-.download button a{
   text-decoration: none;
+  cursor: pointer;
   font-size: 13px;
   font-family: "Raleway";
   color: rgb(255, 255, 255);
@@ -374,8 +369,9 @@ ul.menu> li> a{
   text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
-  line-height: 46px; 
+  line-height: 46px;
 }
+
 
 .footer {
   background-color: #3a3e64;
@@ -531,7 +527,20 @@ ul.menu> li> a{
 @media only screen and (max-width: 480px) {
   .container {
     width: 300px;
+  }
 
+  .logo {
+    float:right;
+  }
+
+  .nav {
+    float: left; 
+  }
+
+  .nav ul li {
+    display: block;
+    position: initial;
+    margin-right: 10px;
   }
 
   ul.menu > li{ 
@@ -542,6 +551,7 @@ ul.menu> li> a{
     display: block;
     line-height: 100px;
     text-align: left;
+    font-size: 20px;
   }
 
   ul.menu > li > a:hover {
@@ -551,16 +561,16 @@ ul.menu> li> a{
   ul.submenu {
     display: none;
     position: absolute;
-    line-height: 25px;
-    right: 70px;
-    width: 100%; 
+    right: 0px; 
     text-align: left;
+    width: 100%;
   }
 
   ul.submenu > li > a {
     display: block;
-    line-height: 30px;
+    line-height: 75px;
     border-bottom: 1px solid #4f5168;
+    font-size: 25px;
   }
 
   ul.submenu > li > a:hover {
@@ -569,6 +579,7 @@ ul.menu> li> a{
 
   ul.menu > li:hover > ul.submenu {
     display: block;
+    background-color: rgba(230, 81, 77);
   }
 
   .masterheader_container {
@@ -639,11 +650,13 @@ ul.menu> li> a{
 
   .footer_container {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
   }
 
   .footer_container h1 {
   font-size: 12px;
+  margin-bottom: 10px;
   }
 
   .share a {
@@ -663,5 +676,6 @@ ul.menu> li> a{
 
   .bottomfeatures{
   width: 100%;
+  margin-bottom: 35px;
   }
 }
