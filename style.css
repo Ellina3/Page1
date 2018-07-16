@@ -579,7 +579,7 @@ ul.menu> li> a{
 
   ul.menu > li:hover > ul.submenu {
     display: block;
-    background-color: rgba(230, 81, 77);
+    background-color: rgb(230, 81, 77);
   }
 
   .masterheader_container {
